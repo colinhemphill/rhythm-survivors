@@ -339,7 +339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8140fb534baf941468dce9e17d4b579d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dps: 1
+  dps: 2
 --- !u!1 &5535129010957839631
 GameObject:
   m_ObjectHideFlags: 0
