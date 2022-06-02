@@ -1,22 +1,36 @@
+using System.Collections;
 using UnityEngine;
 
 public class EnemyAttackPlayer : MonoBehaviour
 {
-    private GameObject player;
-    private BoxCollider boxCollider;
+    public float dps = 1.0f;
+    private IEnumerator takingDamageCoroutine;
 
-    private void Start()
+    private void OnCollisionEnter(Collision collision)
     {
-        boxCollider = GetComponent<BoxCollider>();
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            GameObject player = collision.gameObject;
+            PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
+            takingDamageCoroutine = ApplyDamage(playerHealth);
+            StartCoroutine(takingDamageCoroutine);
+        }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionExit(Collision collision)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
+            StopCoroutine(takingDamageCoroutine);
+        }
+    }
 
-            Debug.Log("Collide with player");
-            player = other.gameObject;
+    IEnumerator ApplyDamage(PlayerHealth playerHealth)
+    {
+        while (true)
+        {
+            playerHealth.AdjustCurrentHealth(dps * -1);
+            yield return new WaitForSeconds(1.0f);
         }
     }
 }

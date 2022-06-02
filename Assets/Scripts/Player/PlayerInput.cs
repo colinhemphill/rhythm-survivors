@@ -8,6 +8,7 @@ public class PlayerInput : MonoBehaviour
 
     private Rigidbody rb;
     private Animator animator;
+    private PlayerHealth playerHealth;
     private float movementX;
     private float movementY;
     private float heading;
@@ -16,11 +17,16 @@ public class PlayerInput : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
+        playerHealth = GetComponent<PlayerHealth>();
         animator.SetBool("Static_b", false);
     }
 
     private void Update()
     {
+        if (playerHealth.isHealthDepleted)
+        {
+            return;
+        }
         transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(new Vector3(0, heading - 90, 0)), Time.deltaTime * rotateSpeed);
         transform.Translate(Vector3.forward * movementY * topSpeed * Time.deltaTime, Space.World);
         transform.Translate(Vector3.right * movementX * topSpeed * Time.deltaTime, Space.World);
@@ -43,6 +49,10 @@ public class PlayerInput : MonoBehaviour
 
     private void OnMove(InputValue movementValue)
     {
+        if (playerHealth.isHealthDepleted)
+        {
+            return;
+        }
         Vector2 movementVector = movementValue.Get<Vector2>();
         currentSpeed = movementVector.sqrMagnitude;
 

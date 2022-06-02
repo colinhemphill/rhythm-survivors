@@ -429,6 +429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playfield: {fileID: 475985833}
   enemyTypePrefabs:
+  - {fileID: 7746153952456100299, guid: 429c1f01c23c53a44b5705855abef578, type: 3}
   - {fileID: 7222872604770363384, guid: 2424b2c196d5b8345bb3c3ca74a05220, type: 3}
 --- !u!4 &477543379
 Transform:
