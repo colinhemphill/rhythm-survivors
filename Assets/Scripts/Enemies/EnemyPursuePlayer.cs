@@ -11,7 +11,7 @@ public class EnemyPursuePlayer : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        target = GameObject.Find("Player").transform;
+        target = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     private void FixedUpdate()

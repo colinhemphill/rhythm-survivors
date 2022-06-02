@@ -6,6 +6,7 @@ public class PlayerInput : MonoBehaviour
     public float topSpeed = 10.0f;
     public float rotateSpeed = 20.0f;
 
+    private Rigidbody rb;
     private Animator animator;
     private float movementX;
     private float movementY;

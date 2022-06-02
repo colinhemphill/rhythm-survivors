@@ -691,9 +691,10 @@ GameObject:
   - component: {fileID: 1140575444325566377}
   - component: {fileID: 1505903733441713512}
   - component: {fileID: 1845472146406047701}
+  - component: {fileID: 3285369027315630507}
   m_Layer: 0
   m_Name: Enemy Chicken Brown
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -759,7 +760,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 596409301086428889}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 16.572502, z: 20.260185}
@@ -777,6 +778,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+--- !u!114 &3285369027315630507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596409301086428889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8140fb534baf941468dce9e17d4b579d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &596409301086431699
 GameObject:
   m_ObjectHideFlags: 0

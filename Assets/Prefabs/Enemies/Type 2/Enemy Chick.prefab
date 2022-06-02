@@ -329,9 +329,10 @@ GameObject:
   - component: {fileID: 3250550585766886281}
   - component: {fileID: 8892879410231484996}
   - component: {fileID: 2014132631433852031}
+  - component: {fileID: 3227928183815390739}
   m_Layer: 0
   m_Name: Enemy Chick
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -397,7 +398,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3906096810033148723}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 6.1517997, z: 7.897789}
@@ -415,6 +416,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+--- !u!114 &3227928183815390739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3906096810033148723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8140fb534baf941468dce9e17d4b579d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3906096810033149755
 GameObject:
   m_ObjectHideFlags: 0
