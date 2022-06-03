@@ -692,6 +692,7 @@ GameObject:
   - component: {fileID: 1505903733441713512}
   - component: {fileID: 1845472146406047701}
   - component: {fileID: 3285369027315630507}
+  - component: {fileID: -3390874340256025550}
   m_Layer: 0
   m_Name: Enemy Chicken Brown
   m_TagString: Enemy
@@ -794,6 +795,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dps: 1
+--- !u!114 &-3390874340256025550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596409301086428889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1e0ed09091c9ad47ba91b112987ec7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <maxHealth>k__BackingField: 1
 --- !u!1 &596409301086431699
 GameObject:
   m_ObjectHideFlags: 0

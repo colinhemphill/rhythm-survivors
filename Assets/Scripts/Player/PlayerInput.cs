@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -5,7 +6,9 @@ public class PlayerInput : MonoBehaviour
 {
     public float topSpeed = 10.0f;
     public float rotateSpeed = 20.0f;
+    public TMP_Text pausedText;
 
+    private PauseGame pauseGame;
     private Animator animator;
     private PlayerHealth playerHealth;
     private float movementX;
@@ -13,8 +16,9 @@ public class PlayerInput : MonoBehaviour
     private float heading;
     private float currentSpeed = 0.0f;
 
-    private void Start()
+    private void Awake()
     {
+        pauseGame = new PauseGame(pausedText);
         animator = GetComponent<Animator>();
         playerHealth = GetComponent<PlayerHealth>();
         animator.SetBool("Static_b", false);
@@ -33,17 +37,22 @@ public class PlayerInput : MonoBehaviour
 
     private void OnDeviceLost()
     {
-
+        pauseGame.Pause();
     }
 
     private void OnDeviceRegained()
     {
-
+        pauseGame.Unpause();
     }
 
     private void OnControlsChanged()
     {
 
+    }
+
+    private void OnPause()
+    {
+        pauseGame.TogglePause();
     }
 
     private void OnMove(InputValue movementValue)

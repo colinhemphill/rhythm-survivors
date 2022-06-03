@@ -360,7 +360,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef24ba9e6a29de04eb407771e50d91a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerMaxHealth: 100
+  <maxHealth>k__BackingField: 100
+  gameOverText: {fileID: 0}
 --- !u!1 &3784941336239899887
 GameObject:
   m_ObjectHideFlags: 0

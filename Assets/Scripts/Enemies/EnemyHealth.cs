@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour, IHealth
 {
+    [field: SerializeField]
     public float maxHealth { get; set; }
     public float currentHealth { get; set; }
     public bool isHealthDepleted { get; set; }
@@ -35,6 +36,6 @@ public class EnemyHealth : MonoBehaviour, IHealth
 
     public void HealthDepleted()
     {
-        isHealthDepleted = true;
+        GameObject.Destroy(this.gameObject);
     }
 }

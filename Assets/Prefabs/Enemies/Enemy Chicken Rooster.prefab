@@ -241,6 +241,7 @@ GameObject:
   - component: {fileID: -4185655899612356639}
   - component: {fileID: -7808286744348080280}
   - component: {fileID: -956094142557209314}
+  - component: {fileID: 34639108407467543}
   m_Layer: 0
   m_Name: Enemy Chicken Rooster
   m_TagString: Enemy
@@ -343,6 +344,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dps: 1
+--- !u!114 &34639108407467543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5535129010957834157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1e0ed09091c9ad47ba91b112987ec7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <maxHealth>k__BackingField: 1
 --- !u!1 &5535129010957839631
 GameObject:
   m_ObjectHideFlags: 0
