@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2164078787087728919}
   - component: {fileID: 2164078787087728936}
   m_Layer: 0
-  m_Name: Enemy Group 4
+  m_Name: Enemy Group 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,12 +45,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settings:
-    groupSize: 30
-    groupSizeVariance: 5
-    spawnBossChance: 70
+    groupSize: 256
+    groupSizeVariance: 32
+    spawnBossChance: 20
   potentialEnemyPrefabs:
   - {fileID: 596409301086428889, guid: a4dd7e2101b8a4e40b065c4132c336c8, type: 3}
-  - {fileID: 5535129010957834157, guid: a1cb684a84beec342bb0b810eff7f8ba, type: 3}
-  - {fileID: 5692557758586887977, guid: 59b0bfc7ca1f5a84694323cb66ea3bb1, type: 3}
   potentialBossPrefabs:
   - {fileID: 3906096810033148723, guid: 5929ccf9c4232f042954fc85da361862, type: 3}

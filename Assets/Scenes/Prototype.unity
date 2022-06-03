@@ -462,6 +462,9 @@ MonoBehaviour:
   maxEnemyGroups: 20
   spawnIntervalSeconds: 10
   playfield: {fileID: 475985833}
+  chanceToSpawnNearPlayer: 40
+  minDistanceFromPlayer: 25
+  maxDistanceFromPlayer: 50
   enemyGroupPrefabs:
   - {fileID: 2164078787087728936, guid: 5cc19d0efb56a8f42a3bfb288f7dd258, type: 3}
   - {fileID: 2164078787087728936, guid: b6c00ad49182b2d419e8087a10185b80, type: 3}
