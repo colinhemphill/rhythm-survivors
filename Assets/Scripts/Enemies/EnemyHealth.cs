@@ -6,8 +6,10 @@ public class EnemyHealth : MonoBehaviour, IHealth
     public float maxHealth { get; set; }
     public float currentHealth { get; set; }
     public bool isHealthDepleted { get; set; }
+    [Tooltip("A prefab effect to display when an enemy is hit by the attack")]
+    public GameObject damageHitEffect;
 
-    private void Start()
+    private void Awake()
     {
         ResetHealth();
     }
@@ -31,11 +33,15 @@ public class EnemyHealth : MonoBehaviour, IHealth
 
     public void AdjustCurrentHealth(float healthChange)
     {
+        if (healthChange < 0)
+        {
+            Instantiate(damageHitEffect, new Vector3(transform.position.x, 1, transform.position.z), transform.rotation);
+        }
         currentHealth += healthChange;
     }
 
     public void HealthDepleted()
     {
-        GameObject.Destroy(this.gameObject);
+        Destroy(gameObject);
     }
 }

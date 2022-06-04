@@ -459,11 +459,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a0cccd91a92424daa96a7f0bd7fe05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxEnemyGroups: 20
-  spawnIntervalSeconds: 10
+  maxEnemyGroups: 10
+  spawnIntervalSeconds: 15
   playfield: {fileID: 475985833}
   chanceToSpawnNearPlayer: 40
-  minDistanceFromPlayer: 25
+  minDistanceFromPlayer: 30
   maxDistanceFromPlayer: 50
   enemyGroupPrefabs:
   - {fileID: 2164078787087728936, guid: 5cc19d0efb56a8f42a3bfb288f7dd258, type: 3}
@@ -695,7 +695,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: 0, z: 0}
 --- !u!114 &534669906
 MonoBehaviour:
@@ -903,7 +903,7 @@ Transform:
   - {fileID: 475985834}
   - {fileID: 923132763}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1037275771
 GameObject:
@@ -1567,6 +1567,18 @@ PrefabInstance:
       propertyPath: gameOverText
       value: 
       objectReference: {fileID: 1999824554}
+    - target: {fileID: 1724206904, guid: 6464b375cc1a04746ade9040bf3e97d7, type: 3}
+      propertyPath: settings.repeatDelay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1724206904, guid: 6464b375cc1a04746ade9040bf3e97d7, type: 3}
+      propertyPath: settings.targetDistance
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1724206904, guid: 6464b375cc1a04746ade9040bf3e97d7, type: 3}
+      propertyPath: settings.attackMovementSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 750804356517251172, guid: 6464b375cc1a04746ade9040bf3e97d7, type: 3}
       propertyPath: pausedText
       value: 
@@ -1577,7 +1589,7 @@ PrefabInstance:
       objectReference: {fileID: 534669904}
     - target: {fileID: 3784941336239675595, guid: 6464b375cc1a04746ade9040bf3e97d7, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3784941336239675595, guid: 6464b375cc1a04746ade9040bf3e97d7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1623,9 +1635,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 5914237085573661740, guid: 6464b375cc1a04746ade9040bf3e97d7, type: 3}
-      propertyPath: pausedText
-      value: 
-      objectReference: {fileID: 485743654}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6464b375cc1a04746ade9040bf3e97d7, type: 3}

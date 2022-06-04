@@ -384,8 +384,8 @@ Rigidbody:
   m_GameObject: {fileID: 3906096810033148723}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Drag: Infinity
+  m_AngularDrag: Infinity
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -416,10 +416,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73b75c4fdf45dc747b93932539e69d56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minimumSpeed: 2
-  speedVariance: 1
+  minimumSpeed: 2.5
+  speedVariance: 0.5
   minimumRotateSpeed: 5
-  rotateSpeedVariance: 20
+  rotateSpeedVariance: 5
 --- !u!114 &3227928183815390739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -432,7 +432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8140fb534baf941468dce9e17d4b579d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dps: 5
+  damagePerSecond: 5
 --- !u!114 &-2399012682898554484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -446,6 +446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <maxHealth>k__BackingField: 15
+  damageHitEffect: {fileID: 4931263269964247951, guid: 6622b905607dbc94e9c049052696fb66, type: 3}
 --- !u!1 &3906096810033149755
 GameObject:
   m_ObjectHideFlags: 0

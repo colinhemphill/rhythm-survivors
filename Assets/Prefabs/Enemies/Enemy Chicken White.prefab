@@ -749,7 +749,7 @@ MonoBehaviour:
   minimumSpeed: 2.5
   speedVariance: 1
   minimumRotateSpeed: 5
-  rotateSpeedVariance: 20
+  rotateSpeedVariance: 5
 --- !u!114 &-7490777822886829738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -762,7 +762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8140fb534baf941468dce9e17d4b579d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dps: 1
+  damagePerSecond: 2
 --- !u!114 &4778506951467009136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -776,6 +776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <maxHealth>k__BackingField: 1
+  damageHitEffect: {fileID: 4931263269964247951, guid: 6622b905607dbc94e9c049052696fb66, type: 3}
 --- !u!1 &5692557758586893379
 GameObject:
   m_ObjectHideFlags: 0

@@ -174,7 +174,9 @@ GameObject:
   - component: {fileID: 2424143768254442327}
   - component: {fileID: 750804356517251172}
   - component: {fileID: 5914237085573661740}
+  - component: {fileID: 402876853487361090}
   - component: {fileID: -8243695076157880321}
+  - component: {fileID: 1724206904}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -336,6 +338,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topSpeed: 10
   rotateSpeed: 20
+  pausedText: {fileID: 0}
 --- !u!114 &5914237085573661740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -346,6 +349,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9dac76d1e92c97c41baba12d4954404d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &402876853487361090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3784941336239899883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01ed33b97f8a2c94b967fe14058069fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &-8243695076157880321
@@ -362,6 +377,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <maxHealth>k__BackingField: 100
   gameOverText: {fileID: 0}
+--- !u!114 &1724206904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3784941336239899883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62510f9ef1c550b4398b5cdcbfa5b594, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  settings:
+    effectPrefab: {fileID: 590688511151763194, guid: f09a5d924e2651749814070ae3f1963f, type: 3}
+    attackTiming: 0
+    repeatDelay: 3
 --- !u!1 &3784941336239899887
 GameObject:
   m_ObjectHideFlags: 0

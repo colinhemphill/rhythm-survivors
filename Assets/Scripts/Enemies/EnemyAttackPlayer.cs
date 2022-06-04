@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class EnemyAttackPlayer : MonoBehaviour
 {
-    public float dps = 1.0f;
+    public float damagePerSecond = 1.0f;
     private IEnumerator takingDamageCoroutine;
 
     private void OnCollisionEnter(Collision collision)
@@ -29,7 +29,7 @@ public class EnemyAttackPlayer : MonoBehaviour
     {
         while (true)
         {
-            playerHealth.AdjustCurrentHealth(dps * -1);
+            playerHealth.AdjustCurrentHealth(damagePerSecond * -1);
             yield return new WaitForSeconds(1.0f);
         }
     }

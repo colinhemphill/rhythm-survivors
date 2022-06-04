@@ -29,7 +29,7 @@ public class TextFadeInOut : MonoBehaviour
         StartCoroutine(FadeTextToZeroAlpha(fadeOutTime));
     }
 
-    public IEnumerator FadeTextToFullAlpha(float t)
+    IEnumerator FadeTextToFullAlpha(float t)
     {
         text.color = new Color(text.color.r, text.color.g, text.color.b, 0);
         while (text.color.a < 1.0f)
@@ -39,7 +39,7 @@ public class TextFadeInOut : MonoBehaviour
         }
     }
 
-    public IEnumerator FadeTextToZeroAlpha(float t)
+    IEnumerator FadeTextToZeroAlpha(float t)
     {
         text.color = new Color(text.color.r, text.color.g, text.color.b, 1);
         while (text.color.a > 0.0f)

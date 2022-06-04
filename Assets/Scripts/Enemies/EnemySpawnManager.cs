@@ -5,7 +5,7 @@ public class EnemySpawnManager : MonoBehaviour
 {
     [Header("Spawn Settings")]
     [Space]
-    public int maxEnemyGroups = 20;
+    public int maxEnemyGroups = 10;
     public float spawnIntervalSeconds = 15.0f;
 
     [Header("Spawn Locations")]
@@ -13,7 +13,7 @@ public class EnemySpawnManager : MonoBehaviour
     public GameObject playfield;
     [Range(1, 100)]
     public int chanceToSpawnNearPlayer = 40;
-    public int minDistanceFromPlayer = 25;
+    public int minDistanceFromPlayer = 30;
     public int maxDistanceFromPlayer = 50;
 
     [Header("Enemy Groups")]
